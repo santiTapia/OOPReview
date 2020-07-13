@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var mobilelibrary_1 = require("./mobilelibrary");
+var mobile_1 = require("./mobile");
+var Nokia3210 = new mobile_1.Mobile("Nokia3210", "3210", "Nokia", "No SD", "Grey", "No 5G", 0, "66.16(Amazon)");
+var iPhone3G = new mobile_1.Mobile("iPhone3G", "3G", "Apple", "No SD", "White", "No 5G", 1, "349(Ebay)");
+var Samsung_Galaxy_10 = new mobile_1.Mobile("Samsung Galaxy 10", "Galaxy 10", "Samsung", "512GB", "Black", "Is 5G", 4, "909(Fabricant)");
+var Huawei_P_20 = new mobile_1.Mobile("Huawei P 20", "P 20", "Huawei", "512GB", "Black/Blue/Green", "Is 5G", 3, "199(Amazon)");
+var arrayMobiles = [Nokia3210, iPhone3G, Samsung_Galaxy_10, Huawei_P_20];
+var Aparatos = new mobilelibrary_1.MobileLibrary("Mi lista", "Marbella", arrayMobiles);
+console.log(arrayMobiles);
+Aparatos.totalPriceCalculation();
+Aparatos.getname();
+Aparatos.getlocation();
+Aparatos.getmobiles();
